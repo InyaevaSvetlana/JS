@@ -1,39 +1,31 @@
 //Задание 1
-let counter = 0;
-const isPrime = (num) => {
-    for (let i = 2; i < num; i += 1) {
-        if (num % i === 0) return false;
+function NumToObj(num)
+{
+    var arrNumber = num.split('');
+    while (arrNumber.length < 3)
+    {
+    	arrNumber.unshift(0);
     }
-    if (num > 1) return true;
+    var objNumber = {};
+    if (arrNumber.length > 3)
+    { 
+        return null;
+    }
+    else
+    {
+    	objNumber['сотни'] = +arrNumber[0]; 
+    	objNumber['десятки'] = +arrNumber[1]; 
+    	objNumber['единицы'] = +arrNumber[2];
+        return objNumber;
+    }
 }
- while (counter < 100) {
-     if (isPrime(counter)){
-         console.log(counter);
-     }
-     counter += 1;
- }
-
- //Задание 2
- 
- const cart = [];
- for (let i = 0; i<= Math.random() * 100; i+=1) {
-     const cartItem = { price: Math.ceil(Math.random() * 1000), name: `Subject #${Math.ceil(i)}`}
-     cart.unshift(cartItem)
- }
- console.log(cart);
- let countBasketPrice = 0;
- for (let i = 0; i<cart.length; i+=1) {
-     const item = cart[i];
-     countBasketPrice += item.price;
- }
- console.log(countBasketPrice);
-
- //Задание 4
-
- let a = "x";
- console.log(a);
-
- for (let i = 0; i<=20; i++ ){
-     a = a + "x"
-     console.log(a)
- }
+var number = prompt("Input number");
+var obj = NumToObj(number);
+if (obj == null)
+{
+	console.log("Число превышает 999");
+}
+else
+{
+  console.log(obj);
+}
