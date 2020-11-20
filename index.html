@@ -5,10 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <script src="script.js"></script>
+    <main>
+        <section>
+            <div class="full-picture"></div>
+            <div class="preview">
+                <img onclick="hand" class="preview-item"
+                    src="https://images.unsplash.com/photo-1605296830714-7c02e14957ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                    onerror="this.style.display = 'none'" alt="PS5">
+                <img onclick="hand" class="preview-item"
+                    src="https://images.unsplash.com/photo-1605291952089-adcb85d4dcbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                    onerror="this.style.display = 'none'" alt="road">
+                <img onclick="hand" class="preview-item"
+                    src="https://images.unsplash.com/photo-1605291952089-adcb85d4dcbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                    onerror="this.style.display = 'none'" alt="palm">
+            </div>
+        </section>
+        <section>
+            <div class="section-products">
+                <h2 class="products-title">Наши товары</h2>
+                <div class="products">
+                    <div class="items" id="1" onclick>
+                        <img src=" https://cdn.pixabay.com/photo/2014/08/26/15/28/jam-428094_960_720.jpg" alt="jem"
+                            width="300" height="250">
+                        <p class="price">1000</p>
+                        <button class="items-button">Купить</button>
+                    </div>
+
+                    <div class="items" id="2" onclick>
+                        <img src="https://cdn.pixabay.com/photo/2016/02/19/10/50/tea-1209428_960_720.jpg" alt="tea"
+                            width="300" height="250">
+                        <p class="price">1500</p>
+                        <button class="items-button">Купить</button>
+                    </div>
+                    <div class="items" id="3" onclick>
+                        <img src="https://cdn.pixabay.com/photo/2020/11/16/17/03/cookies-5749589_960_720.jpg" alt=""
+                            width="300" height="250">
+                        <p class="price">400</p>
+                        <button class="items-button">Купить</button>
+                    </div>
+                    <div class="items" id="4" onclick>
+                        <img src="https://cdn.pixabay.com/photo/2020/10/13/08/36/apple-5651183_960_720.jpg" alt=""
+                            width="300" height="250">
+                        <p class="price">9000</p>
+                        <button class="items-button">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basket">
+                <h2>Корзина</h2>
+                <div class="recycle">
+                    <div class="basket-info">
+                        Корзина пуста
+                    </div>
+                </div>
+                <div class="summ">
+                    Сумма корзины
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
